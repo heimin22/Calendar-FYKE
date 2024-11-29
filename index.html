@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSVT Calendar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <div id="monthDisplay"></div>
+            <div>
+                <button id="backButton">&#10094;</button>
+                <button id="nextButton">&#10095;</button>
+            </div>
+        </div>
+
+        <div id="weekdays">
+            <div>S</div>
+            <div>M</div>
+            <div>T</div>
+            <div>W</div>
+            <div>T</div>
+            <div>F</div>
+            <div>S</div>
+        </div>
+
+        <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+        <h2>Adding a New Event</h2>
+
+        <input id="eventTitleInput" placeholder="Title" />
+
+        <button id="saveButton">Save</button>
+        <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+        <h2>Deleting an Event</h2>
+
+        <p id="eventText"></p>
+
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
